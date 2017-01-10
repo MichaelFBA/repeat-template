@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>repeat-template example</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.23/webcomponents-lite.js"></script>
+        <link rel="import" href="repeat-template.html">
+    </head>
+    <body>
+
+        <repeat-template id="repeater" repeat="">
+            <template>
+                <h1></h1>
+                <img src="http://placehold.it/50x50" alt="">
+            </template>
+        </repeat-template>
+
+
+        <script>
+            //Demo of applying dynamic content and listening to events
+            var data = [
+                {
+                    name: "Ernst Haeckel",
+                    profilePicture: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Ernst_Haeckel_1860.jpg/220px-Ernst_Haeckel_1860.jpg"
+                },
+                {
+                    name: "Lazar Markovich Lissitzky",
+                    profilePicture: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/El_Lissitzky_-_1o_Kestnermappe_Proun_%28Proun._1st_Kestner_Portfolio%29_-_Google_Art_Project.jpg/220px-El_Lissitzky_-_1o_Kestnermappe_Proun_%28Proun._1st_Kestner_Portfolio%29_-_Google_Art_Project.jpg"
+                }
+            ];
+            var repeaterEl = document.getElementById('repeater');
+            //Listen to Event
+            repeaterEl.addEventListener('repeatTemplateEvent', function(e){
+                var duplicatedElement = e.detail.element;
+                var data = e.detail.data;
+
+                //Modify each of the template elements before they are stamped into the dom.
+                duplicatedElement.querySelector('h1').innerHTML = data.name;
+                duplicatedElement.querySelector('img').setAttribute('src', data.profilePicture);
+            })
+
+            repeaterEl.setAttribute('repeat', JSON.stringify(data));
+        </script>
+    </body>
+</html>
