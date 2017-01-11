@@ -12,6 +12,15 @@ We pass **data in** via standard html attributes and listen to **custom events o
 - repeat-template will send out a number of custom events (correlating to the length of the array data you passed in)
 - Set up a custom event listener, it will contain an object with a reference to the duplicated `element` and `data` which you can then inject into the element where ever you want
 
+<!--
+```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="src/repeat-template.html">
+  </template>
+</custom-element-demo>
+```
+-->
 ```html
 <repeat-template id="repeater">
     <template>
@@ -20,6 +29,7 @@ We pass **data in** via standard html attributes and listen to **custom events o
     </template>
 </repeat-template>
 ```
+
 ```js
 <script>
 // Dummy Data
@@ -50,24 +60,6 @@ repeaterEl.addEventListener('repeatTemplateEvent', function(e){
 // Dynamically Add the data to the element via JS
 repeaterEl.setAttribute('repeat', JSON.stringify(data));
 </script>
-```
-
-<!--
-```
-<custom-element-demo>
-  <template>
-    <link rel="import" href="src/repeat-template.html">
-  </template>
-</custom-element-demo>
-```
--->
-```html
-<repeat-template id="repeater">
-    <template>
-        <h1>Name</h1>
-        <img src="http://placehold.it/50x50">
-    </template>
-</repeat-template>
 ```
 
 ## Browser Support (With polyfills)
