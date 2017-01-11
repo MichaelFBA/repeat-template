@@ -52,6 +52,24 @@ repeaterEl.setAttribute('repeat', JSON.stringify(data));
 </script>
 ```
 
+<!--
+```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="src/repeat-template.html">
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<repeat-template id="repeater">
+    <template>
+        <h1>Name</h1>
+        <img src="http://placehold.it/50x50">
+    </template>
+</repeat-template>
+```
+
 ## Browser Support (With polyfills)
 Simply include [Webcomponent-lite](https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.23/webcomponents-lite.min.js)  
 
