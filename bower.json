@@ -1,0 +1,18 @@
+{
+  "name": "repeat-template",
+  "description": "Webcomponent custom element that can be used to repeat internal dom elements",
+  "version": "1.0.0",
+  "main": "dist/repeat-template.html",
+  "keywords": [
+    "web-components",
+    "repeat",
+    "template",
+    "custom-element"
+  ],
+  "authors": ["Michael Bell"],
+  "license": "The MIT License",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MichaelFBA/repeat-template.git"
+  }
+}
