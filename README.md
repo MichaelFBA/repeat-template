@@ -1,5 +1,8 @@
+
+
+
 # Repeat Template
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://beta.webcomponents.org/element/owner/my-element)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://beta.webcomponents.org/element/MichaelFBA/repeat-template)
 
 It does what it says on the wrapper. It repeats elements inside the template element.
 We pass **data in** via standard html attributes and listen to **custom events out**.
@@ -61,8 +64,7 @@ Simply include [Webcomponent-lite](https://cdnjs.cloudflare.com/ajax/libs/webcom
 
 *Indicates the current version of the browser
 
-~Indicates support may be flaky. If using Custom Elements or HTML Imports with Shadow DOM,
-you will get the non-flaky Mutation Observer polyfill that Shadow DOM includes.
+~Indicates support may be flaky. If using Custom Elements or HTML Imports with Shadow DOM, you will get the non-flaky Mutation Observer polyfill that Shadow DOM includes.
 
 ## Tests
 TODO
@@ -70,7 +72,20 @@ TODO
 ## Size
 2.23kb Minifed
 
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+
+## History
+
+`1.0.0` - Beta version working in Chrome
+
 ## License
+
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
