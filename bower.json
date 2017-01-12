@@ -10,7 +10,7 @@
     "custom-element"
   ],
   "authors": ["Michael Bell"],
-  "license": "The MIT License",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git@github.com:MichaelFBA/repeat-template.git"
