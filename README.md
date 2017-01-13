@@ -92,6 +92,7 @@ TODO
 
 ## History
 
+`1.0.1` - Beta version (0.7.3 Webcomponent-lite isnt compatible with custom elements in FF and Safari. Next version fixes that)
 `1.0.0` - Beta version working in Chrome
 
 ## License
